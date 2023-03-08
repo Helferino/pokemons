@@ -12,9 +12,9 @@ Create dev envirovnemnt by duplicating `.env.example` file and change name to `.
 
 __BigQuery__
 <br>
-Create `google.json` file in project root. This file should contain service account credentials for using BigQuery. Also you will need to create database `pokemon` and dataset `pokemons` in your BigQuery project.
+Create `google.json` file in project root. This file should contain service account credentials (idk how its called correctly xd) for using BigQuery. Also you will need to create dataset `pokemon` and table `pokemons` in your BigQuery project.
 
-Dataset `pokemons` structure:
+Structure of `pokemons` table:
 
 ```
 original_id    INTEGER        REQUIRED
@@ -22,7 +22,7 @@ name           STRING(100)    REQUIRED
 weight         INTEGER        NULLABLE
 ```
 
-_I know this could be autocreated with some init script when app is started_
+_I know this could be auto-created with some init script when app is started_
 
 
 __Start__
