@@ -1,15 +1,17 @@
 # Node & BigQuery assignment
 
-__For BigQuery tasks there is bigquery.sql file in app root.__
+__! For BigQuery task there is `bigquery.sql` file in root !__
 
 There is space for many improvements and better approaches but its just matter of time and expectations from assignment task. I wrote some notes accross app but we can discuss this later on call.
 
 ## Setup
 
 __Environemnt__
+<br>
 Create dev envirovnemnt by duplicating `.env.example` file and change name to `.env`.
 
 __BigQuery__
+<br>
 Create `google.json` file in project root. This file should contain service account credentials for using BigQuery. Also you will need to create database `pokemon` and dataset `pokemons` in your BigQuery project.
 
 Dataset `pokemons` structure:
@@ -24,6 +26,7 @@ _I know this could be autocreated with some init script when app is started_
 
 
 __Start__
+<br>
 Install dependencies and run development server with following commands:
 
 ```bash
