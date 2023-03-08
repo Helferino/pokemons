@@ -21,5 +21,12 @@
 import Route from '@ioc:Adonis/Core/Route'
 
 Route.get('/', async () => {
-  return { hello: 'world' }
+  return 'Jakub Urban - Kontentino assignment using Pokemon API 😼'
 })
+
+// Pokemon API
+Route.get('/pokemons', 'PokemonsController.index')
+Route.get('/pokemons/:id', 'PokemonsController.show')
+
+// Insert into BigQuery db based on provided ID
+Route.get('/pokemons/:id/add', 'PokemonsController.store')
